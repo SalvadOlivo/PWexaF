@@ -1,0 +1,49 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  link(rel='stylesheet', href='/style/style.css')
+  title ordenar
+form(action='action_page.php')
+  .container
+    h1 ANTES DE ORDENAR, CUETANOS QUIEN ERES
+    label(for='psw')
+      b crea tu Username:
+    input(type='text', placeholder='Apolo13', name='Username', required='')
+    label(for='psw')
+      b Nombre:
+    input(type='text', placeholder='Salvador', name='name', required='')
+    label(for='psw')
+      b Apellido
+    input(type='text', placeholder='Zeledon', name='last_name', required='')
+    label(for='psw')
+      b Direccion:
+    input(type='text', placeholder='Calle Meditarraneo, Ant. Cuscatlan', name='direccion', required='')
+    h1 COMPLETA LA ORDEN
+    label(for='psw')
+      b Tamano de la pizza:
+    input(type='text', placeholder='Grande,Mediada o pequeña', name='Tamano', required='')
+    label(for='psw')
+      b Cantidad de porciones:
+    input(type='text', placeholder='4,8,12,16 0 24', name='psw', required='')
+    label(for='psw-repeat')
+      b Tipo de masa:
+    input(type='text', placeholder='Napolitana, sfincione o taglio', name='psw-repeat', required='')
+    label(for='psw')
+      b Ingredientes extras:
+    input(type='text', placeholder='Tocino,carne,etc...', name='ps', required='')
+    label(for='psw')
+      b Hot and ready?:
+    input(type='text', placeholder='Si o no', name='pw', required='')
+    label(for='psw')
+      b precio:
+    input(type='text', placeholder='', name='precio', required='')
+    hr
+    p
+      | By creating an account you agree to our 
+      a(href='#') Terms &amp; Privacy
+      | .
+    button.registerbtn(type='submit') Ordenar
+  .container.signin
+    p te gusta nuestro servicio?
